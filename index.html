@@ -1,19 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Worship Set Builder</title>
-  <meta name="easy worship set builder" content="m.burgess.codes">
-  <meta name="m.burgess.codes" content="early apps">
+    <title>Worship Set Builder</title>
+    <meta name="easy worship set builder" content="m.burgess.codes" />
+    <meta name="m.burgess.codes" content="early apps" />
 
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <script src="js/scripts.js"></script>
-</head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"
+      integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI="
+      crossorigin="anonymous"
+    ></script>
 
-<body>
+    <script src="js/scripts.js"></script>
+  </head>
 
-</body>
+  <body>
+    <h1 class="centered">Welcome to Worship Set Builder</h1>
+
+    <div class="container">
+      <label for="autoBuild">Automatically build a 3 song set:</label>
+      <button id="autoBuild">Build That Set!</button><br /><br />
+
+      <input type="text" id="song1" value="" readonly /><br />
+      <input type="text" id="song2" value="" readonly /><br />
+      <input type="text" id="song3" value="" readonly /><br />
+    </div>
+  </body>
 </html>
