@@ -10,17 +10,21 @@
 
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!--jquery-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"
       integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
       crossorigin="anonymous"
     ></script>
+
+    <!--clipboard-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"
       integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI="
       crossorigin="anonymous"
     ></script>
 
+    <!--main script-->
     <script src="js/scripts.js"></script>
   </head>
 
@@ -31,9 +35,26 @@
       <label for="autoBuild">Automatically build a 3 song set:</label>
       <button id="autoBuild">Build That Set!</button><br /><br />
 
-      <input type="text" id="song1" value="" readonly /><br />
-      <input type="text" id="song2" value="" readonly /><br />
-      <input type="text" id="song3" value="" readonly /><br />
+      <input
+        type="button"
+        class="btn"
+        data-clipboard-target="#song1"
+        value="Copy"
+      /><input type="text" id="song1" value="" size="100" readonly /><br />
+
+      <input
+        type="button"
+        class="btn"
+        data-clipboard-target="#song2"
+        value="Copy"
+      /><input type="text" id="song2" value="" size="100" readonly /><br />
+
+      <input
+        type="button"
+        class="btn"
+        data-clipboard-target="#song3"
+        value="Copy"
+      /><input type="text" id="song3" value="" size="100" readonly /><br />
     </div>
   </body>
 </html>
