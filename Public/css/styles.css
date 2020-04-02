@@ -1,7 +1,100 @@
-.centered {
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.imgur.com/4besOi2.jpg");
+
+  /* Set a specific height and width */
+  height: 40%;
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: larger;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #222222;
+  color: azure;
   text-align: center;
 }
 
 input {
-  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #383838;
+  height: 3em;
+  width: 60%;
+  color: azure;
+  font-size: 150%;
+  text-align: left;
+  padding-left: 1%;
+}
+
+button {
+  background-color: #383838;
+  height: 4em;
+  width: 15em;
+  color: azure;
+  border: #d5d5d5;
+  border-width: 2px;
+  border-style: solid;
+  margin: 10px;
+  font-size: 2em;
+}
+
+.border {
+  border: #d5d5d5;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.noBorder {
+  border: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.smaller {
+  width: 10%;
+  height: 2.3em;
+  margin: 0px;
+}
+@-webkit-keyframes marquee {
+  0% {
+    text-indent: 3ch;
+  }
+  100% {
+    text-indent: -5ch;
+  }
+}
+input.marquee {
+  -webkit-animation: marquee 4s infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
 }

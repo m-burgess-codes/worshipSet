@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
 
     <title>Worship Set Builder</title>
-    <meta name="easy worship set builder" content="m.burgess.codes" />
-    <meta name="m.burgess.codes" content="early apps" />
+    <meta name="easy-worship-set-builder" content="m.burgess.codes" />
+    <meta name="m-burgess-codes" content="early-apps" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="Public\css\styles.css" />
 
     <!--jquery-->
     <script
@@ -25,36 +25,57 @@
     ></script>
 
     <!--main script-->
-    <script src="js/scripts.js"></script>
+    <script src="Public\js\scripts.js"></script>
   </head>
 
   <body>
-    <h1 class="centered">Welcome to Worship Set Builder</h1>
+    <div class="container hero-image">
+      <div class="container hero-text">
+        <h1>Welcome to Easy Worship Set Builder</h1>
+        <p>Three Song Worship Set Generator</p>
+      </div>
+    </div>
 
-    <div class="container">
-      <label for="autoBuild">Automatically build a 3 song set:</label>
+    <div class="container center">
       <button id="autoBuild">Build That Set!</button><br /><br />
 
-      <input
-        type="button"
-        class="btn"
-        data-clipboard-target="#song1"
-        value="Copy"
-      /><input type="text" id="song1" value="" size="100" readonly /><br />
+      <div class="container">
+        <button class="btn border smaller" data-clipboard-target="#song1">
+          Copy
+        </button>
+        <input
+          type="text"
+          id="song1"
+          value=""
+          class="noBorder marquee"
+          readonly
+        /><br />
 
-      <input
-        type="button"
-        class="btn"
-        data-clipboard-target="#song2"
-        value="Copy"
-      /><input type="text" id="song2" value="" size="100" readonly /><br />
+        <button class="btn border smaller" data-clipboard-target="#song2">
+          Copy
+        </button>
 
-      <input
-        type="button"
-        class="btn"
-        data-clipboard-target="#song3"
-        value="Copy"
-      /><input type="text" id="song3" value="" size="100" readonly /><br />
+        <input
+          type="text"
+          id="song2"
+          value=""
+          class="noBorder marquee"
+          readonly
+        /><br />
+
+        <button class="btn border smaller" data-clipboard-target="#song3">
+          Copy
+        </button>
+        <input
+          type="text"
+          id="song3"
+          value=""
+          class="noBorder marquee"
+          readonly
+        />
+
+        <br />
+      </div>
     </div>
   </body>
 </html>

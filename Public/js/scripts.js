@@ -18,7 +18,7 @@ $(document).ready(function() {
     var randomTwoSong = twoSong[Math.floor(Math.random() * twoSong.length)];
 
     const threeSong = [
-      "Eleventh Hour Worship - How Great Thou Art - https://www.youtube.com/watch?v=INTU-pfeJHg",
+      "Eleventh Hour Worship - How Great Thou Art - https://tinyurl.com/tn8murj",
       "Passion - Worthy of your Name - https://www.youtube.com/watch?v=fcedMbopknM",
       "Passion - Hallelujah, Our God Reigns - https://www.youtube.com/watch?v=68Uv__48K-Q"
     ];
