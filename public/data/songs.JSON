@@ -1,0 +1,84 @@
+{
+  "songs": [
+    {
+      "artist": "Bethel",
+      "title": "Ain't No Grave",
+      "key": "Bm",
+      "category": 2,
+      "chords": "https://tabs.ultimate-guitar.com/tab/bethel-music/aint-no-grave-chords-2719206",
+      "video": "https://www.youtube.com/watch?v=Kf9ed6qwlaI"
+    },
+    {
+      "artist": "Elevation",
+      "title": "Call Upon the Lord",
+      "key": "C",
+      "category": 2,
+      "chords": "https://tabs.ultimate-guitar.com/tab/elevation-worship/call-upon-the-lordcall-chords-1840187",
+      "video": "https://www.youtube.com/watch?v=e7iKmka651U"
+    },
+    {
+      "artist": "Planetshakers",
+      "title": "Come Right Now",
+      "key": "Ab",
+      "category": 1,
+      "chords": "https://worshipchords.com/come-right-now-chords",
+      "video": "https://www.youtube.com/watch?v=VX9mIDqul1M"
+    },
+    {
+      "artist": "Elevation",
+      "title": "Do it Again",
+      "key": "Bb",
+      "category": 2,
+      "chords": "https://tabs.ultimate-guitar.com/tab/elevation-worship/do-it-again-chords-1873702",
+      "video": "https://www.youtube.com/watch?v=0B_lnQIITxU"
+    },
+    {
+      "artist": "Elevation",
+      "title": "Echo",
+      "key": "D",
+      "category": 1,
+      "chords": "https://tabs.ultimate-guitar.com/tab/elevation-worship/echo-chords-2461184",
+      "video": "https://www.youtube.com/watch?v=sbszEOO_K5w"
+    },
+    {
+      "artist": "Planetshakers",
+      "title": "Electric Atmosphere",
+      "key": "C#",
+      "category": 1,
+      "chords": "https://tabs.ultimate-guitar.com/tab/planetshakers/electric-atmosphere-chords-2571552",
+      "video": "https://www.youtube.com/watch?v=KOCjXjjxMpM"
+    },
+    {
+      "artist": "Jesus Culture",
+      "title": "Freedom",
+      "key": "G",
+      "category": 1,
+      "chords": "https://tabs.ultimate-guitar.com/tab/jesus-culture/freedom-chords-2426227",
+      "video": "https://www.youtube.com/watch?v=f3f5dVlfMPY"
+    },
+    {
+      "artist": "Passion",
+      "title": "Glorious Day",
+      "key": "D",
+      "category": 1,
+      "chords": "https://tabs.ultimate-guitar.com/tab/passion/glorious-day-chords-1949913",
+      "video": "https://www.youtube.com/watch?v=gklJ2XZwDHc"
+    },
+    {
+      "artist": "Elevation",
+      "title": "Grace Like a Wave",
+      "key": "Db",
+      "category": 1,
+      "chords": "https://tabs.ultimate-guitar.com/tab/elevation-worship/grace-like-a-wave-chords-1812322",
+      "video": "https://www.youtube.com/watch?v=cNCjhVXFPqI"
+    },
+    {
+      "artist": "Passion",
+      "title": "Hallelujah, Our God Reigns",
+      "key": "B",
+      "category": 2,
+      "chords": "https://tabs.ultimate-guitar.com/tab/passion/hallelujah-our-god-reigns-chords-2340043",
+      "video": "https://www.youtube.com/watch?v=68Uv__48K-Q"
+    }
+  ]
+}

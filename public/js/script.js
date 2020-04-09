@@ -1,40 +1,58 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //--clipboard.js instantiation--//
   new ClipboardJS(".btn");
+  var songs = [];
 
-  //get JSON data - select random string from each array - if strings match rerun - if they don't match print data
-  $("#autoBuild").click(function() {
-    var oneSong = [];
-    $(function() {
-      $.getJSON("data/oneSong.json", function(data) {
-        oneSong = data;
-        console.log(oneSong);
-        var randomOneSong = oneSong[Math.floor(Math.random() * oneSong.length)];
-        console.log(randomOneSong);
-      });
-
-      //randomly select a song from the oneSong JSON
-
-      // //randomly select a song from the medium/low/high energy category
-      // var randomTwoSong = twoSong[Math.floor(Math.random() * twoSong.length)];
-
-      // //randomly select a song from the low energy category
-      // var randomThreeSong =
-      //   threeSong[Math.floor(Math.random() * threeSong.length)];
-
-      // //make sure a song doesn't occur twice in a set
-      // if (randomOneSong === randomTwoSong) {
-      //   randomTwoSong = twoSong[Math.floor(Math.random() * twoSong.length)];
-      // }
-      // if (randomTwoSong === randomThreeSong) {
-      //   randomThreeSong =
-      //     threeSong[Math.floor(Math.random() * twoSong.length)];
-      // }
-
-      // //place song results into the textboxes
-      // $("#song1").val(randomOneSong);
-      // $("#song2").val(randomTwoSong);
-      // $("#song3").val(randomThreeSong);
+  $(function () {
+    $.getJSON("data/songs.JSON").then(function (data) {
+      songs = data.songs;
     });
   });
+
+  $("#autoBuild").click(function () {
+    buildSet(songs);
+  });
+
+  function buildSet(songs) {
+    var oneSongs = songs.filter((song, index) => song.category === 1);
+    console.log(oneSongs);
+    randomOneSong = Math.floor(Math.random() * Math.floor(oneSongs.length));
+
+    var twoSongs = songs.filter(
+      (song, index) => song.category === 1 || song.category === 2
+    );
+    console.log(twoSongs);
+    randomTwoSong = Math.floor(Math.random() * Math.floor(twoSongs.length));
+
+    while (randomTwoSong == randomOneSong) {
+      randomTwoSong = Math.floor(Math.random() * Math.floor(twoSongs.length));
+    }
+
+    var threeSongs = songs.filter((song, index) => song.category === 2);
+    console.log(threeSongs);
+    randomThreeSong = Math.floor(Math.random() * Math.floor(threeSongs.length));
+
+    while (
+      randomThreeSong == randomTwoSong ||
+      randomThreeSong == randomOneSong
+    ) {
+      randomThreeSong = Math.floor(
+        Math.random() * Math.floor(threeSongs.length)
+      );
+    }
+
+    $("#song1").val(
+      `${songs[randomOneSong].title} - ${songs[randomOneSong].artist}`
+    );
+    $("#song2").val(
+      `${songs[randomTwoSong].title} - ${songs[randomTwoSong].artist}`
+    );
+    $("#song3").val(
+      `${songs[randomThreeSong].title} - ${songs[randomThreeSong].artist}`
+    );
+  }
 });
+// //place song results into the textboxes
+// $("#song1").val(randomOneSong);
+// $("#song2").val(randomTwoSong);
+// $("#song3").val(randomThreeSong);
