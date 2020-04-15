@@ -8,6 +8,7 @@
     <meta name="easy-worship-set-builder" content="m.burgess.codes" />
     <meta name="m-burgess-codes" content="early-apps" />
 
+    <!--link to CSS file-->
     <link rel="stylesheet" href="css/style.css" />
 
     <!--jquery-->
@@ -32,48 +33,169 @@
     <div class="container hero-image">
       <div class="container hero-text">
         <h1>Welcome to Easy Worship Set Builder</h1>
-        <p>Three Song Worship Set Generator</p>
+        <p>Simple Worship Set Generator</p>
       </div>
     </div>
 
     <div class="container center">
       <button id="autoBuild">Build That Set!</button><br /><br />
 
-      <div class="container">
-        <button class="btn border smaller" data-clipboard-target="#song1">
-          Copy
-        </button>
-        <input
-          type="text"
-          id="song1"
-          value=""
-          class="noBorder marquee"
-          readonly
-        /><br />
+      <div class="container thinBorder" id="set">
+        <h3>Your Worship Set</h3>
+        <div class="thinBorder">
+          <div id="1res" class="invisible">
+            <span class="lighterbg" id="s1t"></span>
+            <span class="lighterbg" id="s1a"></span>
+            <span class="lighterbg" id="s1k"></span>
+            <span class="lighterbg" id="s1v"></span>
+            <span class="lighterbg" id="s1c"></span> <br />
+          </div>
+          <button class="btn border smaller" data-clipboard-target="#song1">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song1"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          />
+          <input
+            type="image"
+            class="icon"
+            id="roll1"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
 
-        <button class="btn border smaller" data-clipboard-target="#song2">
-          Copy
-        </button>
+        <div class="thinBorder">
+          <div id="2res" class="invisible">
+            <span class="lighterbg" id="s2t"></span>
+            <span class="lighterbg" id="s2a"></span>
+            <span class="lighterbg" id="s2k"></span>
+            <span class="lighterbg" id="s2v"></span>
+            <span class="lighterbg" id="s2c"></span> <br />
+          </div>
+          <button class="btn border smaller" data-clipboard-target="#song2">
+            Copy Info
+          </button>
 
-        <input
-          type="text"
-          id="song2"
-          value=""
-          class="noBorder marquee"
-          readonly
-        /><br />
+          <input
+            type="text"
+            id="song2"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            class="icon"
+            id="roll2"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
 
-        <button class="btn border smaller" data-clipboard-target="#song3">
-          Copy
-        </button>
-        <input
-          type="text"
-          id="song3"
-          value=""
-          class="noBorder marquee"
-          readonly
-        />
+        <div class="thinBorder">
+          <div id="3res" class="invisible">
+            <span class="lighterbg" id="s3t"></span>
+            <span class="lighterbg" id="s3a"></span>
+            <span class="lighterbg" id="s3k"></span>
+            <span class="lighterbg" id="s3v"></span>
+            <span class="lighterbg" id="s3c"></span> <br />
+          </div>
+          <button class="btn border smaller" data-clipboard-target="#song3">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song3"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            class="icon"
+            id="roll3"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
 
+        <div class="thinBorder invisible">
+          <button class="btn border smaller" data-clipboard-target="#song4">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song4"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            class="icon"
+            id="roll4"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
+
+        <div class="thinBorder invisible">
+          <button class="btn border smaller" data-clipboard-target="#song5">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song5"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            id="roll5"
+            class="icon"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
+
+        <div class="thinBorder invisible">
+          <button class="btn border smaller" data-clipboard-target="#song6">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song6"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            id="roll6"
+            class="icon"
+            src="graphics/icons/dice.png"
+          />
+        </div>
+        <br />
+
+        <div class="thinBorder invisible">
+          <button class="btn border smaller" data-clipboard-target="#song7">
+            Copy Info
+          </button>
+          <input
+            type="text"
+            id="song7"
+            value=""
+            class="noBorder output marquee"
+            readonly
+          /><input
+            type="image"
+            id="roll7"
+            class="icon"
+            src="graphics/icons/dice.png"
+          />
+        </div>
         <br />
       </div>
     </div>
