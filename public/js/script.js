@@ -7,7 +7,7 @@ $(document).ready(function () {
 
   //import JSON data file
   $(function load() {
-    $.getJSON("data/songs.JSON").then(function (data) {
+    $.getJSON("public/data/songs.JSON").then(function (data) {
       songs = data.songs;
     });
   });
